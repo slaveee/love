@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Валентинка</title> 
+    <style> 
+        body { 
+            background-color: #fce4ec; 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        } 
+ 
+        .valentinka { 
+            background: linear-gradient(45deg, #ff8e8e, #ff6d6d); 
+            padding: 50px; 
+            border-radius: 15px; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+            animation: pulse 1.5s infinite; 
+            width: 90%; 
+            max-width: 400px; 
+        } 
+ 
+        .valentinka h1 { 
+            font-size: 30px; 
+            color: white; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+        } 
+ 
+        .valentinka p { 
+            font-size: 18px; 
+            color: white; 
+            margin-bottom: 30px; 
+            letter-spacing: 1px; 
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); 
+        } 
+ 
+        .heart { 
+            font-size: 80px; 
+            color: red; 
+            margin-bottom: 20px; 
+            animation: beat 1s infinite; 
+        } 
+ 
+        @keyframes pulse { 
+            0% { 
+                transform: scale(1); 
+            } 
+            50% { 
+                transform: scale(1.05); 
+            } 
+            100% { 
+                transform: scale(1); 
+            } 
+        } 
+ 
+        @keyframes beat { 
+            0%, 100% { 
+                transform: scale(1); 
+            } 
+            50% { 
+                transform: scale(1.2); 
+            } 
+        } 
+ 
+        .button { 
+            background-color: #ff5c5c; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border-radius: 25px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            text-transform: uppercase; 
+        } 
+ 
+        .button:hover { 
+            background-color: #ff3c3c; 
+        } 
+ 
+        /* Медиазапросы для мобильных устройств */ 
+        @media (max-width: 750px) { 
+            .valentinka { 
+                padding: 30px; 
+            } 
+ 
+            .valentinka h1 { 
+                font-size: 24px; 
+            } 
+ 
+            .valentinka p { 
+                font-size: 16px; 
+            } 
+ 
+            .heart { 
+                font-size: 60px; 
+            } 
+ 
+            .button { 
+                padding: 8px 16px; 
+                font-size: 14px; 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <div class="valentinka"> 
+        <div class="heart">❤️</div> 
+        <h1>С Днём Святого Валентина!</h1> 
+        <p>Будешь моей валентинкой? ❤️</p> 
+        <button class="button" onclick="alert('Умничка)')">Даа!!!</button> 
+    </div> 
+ 
+</body> 
+</html>
